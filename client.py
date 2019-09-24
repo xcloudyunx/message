@@ -59,7 +59,10 @@ serv.start()
 while True:
 	reply = RECV()
 	if reply == "HELP":
-		print "Help menu that I can't be bothered writing right now"
+		print "help\t\tdisplays this menu"
+		print "connect <name>\t\tsends a request to <name>"
+		print "accept <name>\t\taccepts <name>'s request"
+		print "disconnect <name>\tend message with <name>"
 		
 	elif reply == "EXIT":
 		server.close()

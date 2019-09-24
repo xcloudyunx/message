@@ -181,7 +181,7 @@ class user:
 					else:
 						SEND(self.hubConn, "DISCONNECT UNSUCCESSFUL")
 						
-				elif command.lower().startswith("room connect"):
+				"""elif command.lower().startswith("room connect"):
 					if len(command.split()) <= 4:
 						SEND(self.hubConn, "SHORT")
 						continue
@@ -197,7 +197,7 @@ class user:
 					else:
 						#clients[name].pendingInbounds.append(self.name)
 						#self.pendingOutbounds.append(name)
-						SEND(self.hubConn, "ROOM CONNECT SUCCESSFUL")
+						SEND(self.hubConn, "ROOM CONNECT SUCCESSFUL")"""
 						
 				else:
 					SEND(self.hubConn, "INVALID")
